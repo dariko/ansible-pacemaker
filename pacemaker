@@ -324,7 +324,7 @@ def main():
             'state': dict(default='present', choices=['present', 'absent']),
             'action': dict(default='resource', choices=['prepare', 'resource', 'commit']),
             'shadow': dict(default=None),
-            'ignore_target_role': dict(default=True, type='bool', choices=BOOLEANS),
+            'ignore_target_role': dict(default=True, type='bool'),
         },
         supports_check_mode=True
     )
